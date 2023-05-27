@@ -42,10 +42,6 @@ spec:
       {{- end }}
       containers:
         - name: server
-          lifecycle:
-            postStart:
-              exec:
-                command: [ "apk", "add", "build-base" ]
           env:
             - name: CLUSTER_NAME
               value: {{.Values.datree.clusterName | required "Cluster name is required"}}
