@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "datree-webhook-server",
+            "type": "go",
+            "request": "launch",
+            "mode": "exec",
+            "program": "/out/webhook-datree",
+            "raftt": {
+                "workload": "datree-webhook-server"
+            },
+            "preLaunchTask": "build-webhook-server"
+        }
+    ]
+}
